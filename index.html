@@ -52,7 +52,7 @@
     }
 
     .ptexto{
-        margin-top: 40px;
+        /*margin-top: 40px;*/
         font-size: 13px;
     }
 
@@ -64,6 +64,7 @@
     .ptextocont {
         font-size: 13px;
         font-style: italic;
+        margin-top: 40px;
     }
 
 @media screen and (max-width:600px) {
@@ -131,7 +132,7 @@ h1 {
 <!-- Contador | Start -->
 <script>
   // Variável para armazenar o valor inicial do contador
-  var contador = 1;
+  var contador = 3;
 
   // Função para atualizar dinamicamente o número exibido no <span>
   function atualizarNumero() {
@@ -140,11 +141,11 @@ h1 {
     // Exibir o número do contador dentro de um <span>
     divContador.innerHTML = "<span>" + contador + "</span>";
     // Incrementar o contador em 2
-    contador += 2;
+    contador += 1;
   }
 
-  // Chamar a função atualizarNumero a cada segundo (3000 milissegundos)
-  setInterval(atualizarNumero, 3000);    
+  // Chamar a função atualizarNumero a cada segundo (4 segundos = 40000)
+  setInterval(atualizarNumero, 40000);    
 </script>
     
 <!-- Contador | End -->
@@ -153,11 +154,11 @@ h1 {
 <body>
     <div class="container">
         <img src="https://raw.githubusercontent.com/StuffMediaCode/saojose/main/logo-wp.png" width="120px" alt="WhatsApp">
-        <h1>Fale com Distribuidora São José no WhatsApp</h1>
+        <h1>Fale com a Distribuidora São José pelo WhatsApp</h1>
         <p class="ptextsub">Compre peças no atacado com os menores preços do mercado</p>
         <img class="logo" src="https://raw.githubusercontent.com/StuffMediaCode/saojose/main/logo-sao-jose.2.png" alt="Logo Lady Luz" width="150">
-        <p class="ptexto">Clique no botão abaixo</p>
         <p class="ptextocont">Você é o 1° de <span id="contador"></span> pessoas na fila de atendimento</p>
+        <p class="ptexto">Clique no botão abaixo</p>
         <a class="btn" onclick="trackClick()" href="https://api.whatsapp.com/send?phone=554436732065&text=Olá, quero comprar peças no atacado com o menor preço do mercado!">Falar com Distribuidora São José</a>
     </div>
     <script>
