@@ -132,7 +132,7 @@ h1 {
 <!-- Contador | Start -->
 <script>
   // Variável para armazenar o valor inicial do contador
-  var contador = 3;
+  var contador = 1;
 
   // Função para atualizar dinamicamente o número exibido no <span>
   function atualizarNumero() {
@@ -141,11 +141,11 @@ h1 {
     // Exibir o número do contador dentro de um <span>
     divContador.innerHTML = "<span>" + contador + "</span>";
     // Incrementar o contador em 2
-    contador += 1;
+    contador += 2;
   }
 
-  // Chamar a função atualizarNumero a cada segundo (9 milisegundos = 9000)
-  setInterval(atualizarNumero, 9000);    
+  // Chamar a função atualizarNumero a cada segundo (5 milisegundos = 5000)
+  setInterval(atualizarNumero, 5000);    
 </script>
     
 <!-- Contador | End -->
