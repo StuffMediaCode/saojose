@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/whatsapp-icone-1.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Fale com Distribuidora São José no WhatsApp</title>
+<script src="/contador.js"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #cbcbcb;
+        height: 100vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 75px 12px;
+        padding: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: #333333;
+        margin-bottom: 13px;
+    }
+
+    .logo {
+        border-radius: 50%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #59CE72;
+        color: #FFFFFF;
+        padding: 20px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        border-bottom: 3px solid #51b566;
+        font-weight: bold;
+        /*margin-top: 20px;*/
+    }
+
+    .ptexto{
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+    .ptextsub{
+        margin-top: 10px;
+        margin-bottom: 30px; 
+    }
+
+    .ptextocont {
+        font-size: 13px;
+        font-style: italic;
+    }
+
+@media screen and (max-width:600px) {
+
+    .container {
+        padding: 75px 25px;
+        margin: 20px 12px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:600px) {
+
+.container {
+    padding: 80px 120px;
+}
+
+h1 {
+        color: #333333;
+        padding: 0px 100px;
+        margin-bottom: 13px;
+    }
+
+}
+
+</style>
+<!-- PIXEL META -->
+<!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '724019766185423');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=724019766185423&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+<!-- PIXEL META-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5EB0VXE7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SL5EB0VXE7');
+</script>
+
+</head>
+<body>
+    <div class="container">
+        <img src="/logo-wp.png" width="120px" alt="WhatsApp">
+        <h1>Fale com Distribuidora São José no WhatsApp</h1>
+        <p class="ptextsub">Compre peças no atacado com os menores preços do mercado</p>
+        <img class="logo" src="/logo-sao-jose.2.png" alt="Logo Lady Luz" width="150">
+        <p class="ptexto">Clique no botão abaixo</p>
+        <p class="ptextocont">Você é o 1° de <span id="contador"></span> pessoas na fila de atendimento</p>
+        <a class="btn" onclick="trackClick()" href="https://api.whatsapp.com/send?phone=554436732065&text=Olá, quero comprar peças no atacado com o menor preço do mercado!">Falar com Distribuidora São José</a>
+    </div>
+    <script>
+        function trackClick() {
+            // Script para rastreamento do Facebook
+            fbq('track', 'CliqueWhatsApp');
+            
+            // Script para rastreamento do Google Analytics 4        
+            gtag('event', 'cliquewhatsapp', {
+                'event_category': 'Engagement',      
+                'event_label': 'Clique no botão do WhatsApp'
+             });            
+        }
+    </script>
+</body>
+</html>
